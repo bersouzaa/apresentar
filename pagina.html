@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <li><a href="#p2">Perfil 02</a></li>
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#contactDiv">Contato</a></li>
+        </ul>
+    </header>
+
+<!-- Perfil01 -->
+    <div id="p1" class="profile01">
+        <div class="left-profile01">
+            <div class="rel">
+                <a href="https://www.instagram.com/ber.souzaa/"><img class="img-01" href="" src="bernardo.png" alt="Imagem de perfil Bernardo"></a>
+            </div>
+        </div>
+        <div class="right-profile02">
+            <h2 class="nome-p1">Bernardo Souza</h2>
+            <p class="p-p1">Nascido em Curitiba, tenho 16 anos e atualmente estou estudando desenvolvimento web no SESI Centro.</p>
+        </div>
+    </div>
+
+
+<!-- Perfil02 -->
+    <div id="p2" class="profile02">
+        <div class="left-profile02">
+            <h2 class="nome-p2">Sofia Schwaigert</h2>
+            <p class="p-p2">Nascida em Curitiba, tenho 16 anos e atualmente estou estudando desenvolvimento web no SESI Centro.</p>
+        </div>
+        <div class="right-profile03">
+            <div class="rel2">
+                <a href="https://www.instagram.com/sofischwaigert/"><img class="img-02" src="OIP.png" alt="Imagem de perfil Sofia"></a>
+            </div>
+        </div>
+    </div>
+
+<!-- Tecnologias -->
+    <div id="tec" class="tec">
+        <div class="div-tecnologia">
+            <div class="filhas">
+                <img class="imgc" src="html5.png" alt="html5logo">
+                    <div class="tit-tec">
+                        <h2>HTML5</h2>
+                    </div>
+                    <div class="des-tec">
+                        <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+                    </div>
+            </div>
+            <div class="filhas">
+                <img class="imgc" src="css3.png" alt="css3logo">
+                    <div class="tit-tec">
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="des-tec">
+                        <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense na decoração da sua página.</p>
+                    </div>
+            </div>
+            <div class="filhas">
+                <img class="imgc" src="js.png" alt="jslogo">
+                    <div class="tit-tec">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="des-tec">
+                        <p>O JavaScript é amplamente categorizado como uma linguagem de criação de scripts ou uma linguagem interpretada. O código em JavaScript é interpretado, ou seja, é traduzido diretamente no código de linguagem de máquina subjacente por um mecanismo de JavaScript.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Contato -->
+    <div class="contactDiv" id="contact">
+            <section class="formulario">
+                <div class="interface">
+                    <h2 class="titulolegal">Nosso Contato</h2>
+        
+                    <div class="form">
+                        <input type="text" name="" id="nome" placeholder="Seu nome completo:" required>
+                        <textarea name="text" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <div class="botaolocal">
+                            <button class="botao" onclick="conferirMensagemWhatsapp()">Conferir dados</button>
+                        </div>
+                    </div>               
+                </div>
+            </section>
+
+
+        
+        <div class="right">
+            <div class="rightContact">
+                <h2 class="titulolegal">Conf. de Dados</h2>
+                <div class="tit2-nome">
+                    <p>Nome: <span id="confNome"></span></p>
+                </div>
+                <div class="tit2-mensagem">
+                    <p>Mensagem: <span id="confMsg"></span></p>
+                </div>
+            </div>
+            <div class="botaolocal2">
+                <button class="botao2" onclick="enviar()">ZAP</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
